@@ -1,0 +1,21 @@
+{
+  "name": "Regional Health Stats (Demo)",
+  "short_name": "Health Stats Demo",
+  "start_url": "/health-stats-demo/",
+  "scope": "/health-stats-demo/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#004080",
+  "icons": [
+    {
+      "src": "/health-stats-demo/images/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/health-stats-demo/images/icon-512-from-building.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

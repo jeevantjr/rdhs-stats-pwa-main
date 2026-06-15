@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MOH Division Dengue Case Summary — Demo</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    .chart-container { max-width: 100%; margin-bottom: 40px; }
+    .table-container { max-width: 100%; overflow-x: auto; box-shadow: 0 0 10px rgba(0,0,0,0.1); border-radius: 8px; }
+    table { width: 100%; border-collapse: collapse; min-width: 700px; background-color: #fff; font-size: 16px; }
+    thead { background-color: #004080; color: white; }
+    th, td { padding: 10px 12px; text-align: left; border-bottom: 1px solid #ddd; white-space: nowrap; }
+    tbody tr:hover { background-color: #f2f2f2; }
+    caption { caption-side: top; font-size: 1.2em; font-weight: bold; margin: 10px 0; text-align: left; }
+    .demo-notice { background: #fff3cd; border: 1px solid #ffc107; border-radius: 6px; padding: 8px 12px; margin-bottom: 16px; font-size: 0.85rem; color: #856404; }
+    @media screen and (max-width: 600px) { table { font-size: 13px; } th, td { padding: 8px; } }
+  </style>
+</head>
+<body>
+
+<div class="demo-notice">⚠️ Demo version — all area names and statistics are sample data only.</div>
+
+<div class="chart-container">
+  <canvas id="caseChart"></canvas>
+</div>
+
+<script>
+  const ctx = document.getElementById('caseChart').getContext('2d');
+  const caseChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: ['Area-01','Area-02','Area-03','Area-04','Area-05','Area-06','Area-07','Area-08','Area-09','Area-10','Area-11','Area-12'],
+      datasets: [{
+        label: 'No. of Cases (Sample)',
+        data: [130, 125, 115, 90, 60, 40, 25, 42, 35, 20, 18, 9],
+        backgroundColor: '#1976d2'
+      }]
+    },
+    options: {
+      responsive: true,
+      plugins: {
+        legend: { display: false },
+        title: { display: true, text: 'Cases Reported by Health Area (Sample Data)', font: { size: 18 } }
+      },
+      scales: { x: { ticks: { font: { size: 12 } } }, y: { beginAtZero: true } }
+    }
+  });
+</script>
+
+<div class="table-container">
+  <table>
+    <caption>Health Area-wise Dengue Cases and Deaths – Sample Year</caption>
+    <thead>
+      <tr><th>No</th><th>Health Area</th><th>Nos. of Cases</th><th>Nos. of Deaths</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>01</td><td>Area-01</td><td>130</td><td>0</td></tr>
+      <tr><td>02</td><td>Area-02</td><td>125</td><td>0</td></tr>
+      <tr><td>03</td><td>Area-03</td><td>115</td><td>0</td></tr>
+      <tr><td>04</td><td>Area-04</td><td>90</td><td>0</td></tr>
+      <tr><td>05</td><td>Area-05</td><td>60</td><td>0</td></tr>
+      <tr><td>06</td><td>Area-06</td><td>40</td><td>0</td></tr>
+      <tr><td>07</td><td>Area-07</td><td>25</td><td>0</td></tr>
+      <tr><td>08</td><td>Area-08</td><td>42</td><td>0</td></tr>
+      <tr><td>09</td><td>Area-09</td><td>35</td><td>0</td></tr>
+      <tr><td>10</td><td>Area-10</td><td>20</td><td>0</td></tr>
+      <tr><td>11</td><td>Area-11</td><td>18</td><td>0</td></tr>
+      <tr><td>12</td><td>Area-12</td><td>9</td><td>0</td></tr>
+      <tr><td><strong>Total</strong></td><td></td><td><strong>709</strong></td><td><strong>0</strong></td></tr>
+    </tbody>
+  </table>
+</div>
+
+<a href="index.html" style="position:fixed;bottom:20px;right:20px;background:linear-gradient(to right,#004ba0,#1976d2);color:#fff;padding:14px 24px;border-radius:50px;text-decoration:none;font-size:16px;font-weight:600;font-family:'Segoe UI',sans-serif;box-shadow:0 6px 16px rgba(0,0,0,0.2);z-index:1000;">
+  🔙 Back to Health Statistics Dashboard
+</a>
+
+</body>
+</html>

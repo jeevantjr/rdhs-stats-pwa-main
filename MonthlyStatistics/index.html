@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Monthly Health Statistics – 2025</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: #f4f9ff;
+      color: #002147;
+    }
+
+    header {
+      background-color: #004080;
+      color: white;
+      padding: 1.5rem 2rem;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+      font-weight: 700;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 1rem;
+    }
+
+    .section-title {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: #004080;
+      margin-top: 2.5rem;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #004080;
+      padding-bottom: 0.5rem;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1rem;
+    }
+
+    .card {
+      background-color: white;
+      padding: 1rem 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 64, 128, 0.1);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      text-decoration: none;
+      color: #002147;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 16px rgba(0, 64, 128, 0.2);
+      background-color: #e9f1fb;
+    }
+
+    .card i {
+      font-size: 1.5rem;
+      color: #004080;
+      flex-shrink: 0;
+    }
+
+    .card span {
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 3rem;
+      padding: 1.5rem 1rem;
+      font-size: 0.95rem;
+      background-color: #004080;
+      color: white;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+    }
+
+    footer a {
+      color: #90caf9;
+      text-decoration: none;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.5rem;
+      }
+
+      .card span {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1><i class="fas fa-chart-line"></i> Monthly Health Statistics – 2025</h1>
+  </header>
+
+  <div class="container">
+
+    <!-- Communicable Diseases -->
+    <div class="section-title">🦠 Communicable Diseases</div>
+    <div class="card-grid">
+        <a href="123.html" class="card">
+        <i class="fas fa-virus"></i>
+        <span>Dengue Cases by MOH Division (2025 Monthly Report)</span>
+      </a>
+      <a href="Leprosy.html" class="card">
+        <i class="fas fa-virus"></i>
+        <span>Monthly Leprosy Updates by MOH - 2025</span>
+      </a>
+     
+    </div>
+
+    <!-- Maternal Health -->
+    <div class="section-title">🤰 Maternal Health</div>
+    <div class="card-grid">
+      <a href="Anaemia.html" class="card">
+        <i class="fas fa-heartbeat"></i>
+        <span>Anaemia in Pregnant Mothers – 2025</span>
+      </a>
+         <a href="TeenagePregnant.html" class="card">
+        <i class="fas fa-heartbeat"></i>
+        <span>Teenage Pregnant Mothers – 2025</span>
+      </a>
+    </div>
+
+    <!-- Child Health -->
+    <div class="section-title">👶 Child Health</div>
+    <div class="card-grid">
+      <a href="ChildDeaths.html" class="card">
+        <i class="fas fa-baby"></i>
+        <span>Child Deaths Under 5 – 2025</span>
+      </a>
+      <a href="Underweight.html" class="card">
+        <i class="fas fa-weight"></i>
+        <span>Underweight Preschoolers (2–5 years) – 2025</span>
+      </a>
+    </div>
+
+  </div>
+
+  <footer>
+    <p style="font-size: 16px; font-weight: 600; margin: 0 0 10px;">
+      © 2025 All Rights Reserved
+    </p>
+    <p style="font-size: 15px; margin: 0 0 10px; line-height: 1.6;">
+      <strong>Health Information Management Unit</strong><br />
+      Regional Director of Health Services, 100 Admin Road, Region A
+    </p>
+    <p style="font-size: 15px; margin: 0; line-height: 1.6;">
+      📞 <a href="tel:+94262222263">000-000-0000</a> &nbsp;|&nbsp;
+      📠 Fax: <span style="color: #bbdefb;">000-000-0001</span><br />
+      ✉️ <a href="mailto:info@example.com">info@example.com</a>
+    </p>
+  </footer>
+
+  <a href="../index.html" style="
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #002147;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Segoe UI', sans-serif;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    z-index: 1000;
+  ">
+    🏠 Home
+  </a>
+
+</body>
+</html>
+

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<h2>Information on Government Hospitals by Divisional Level — Sample Year</h2>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DS Division Institutions — Demo</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    .table-container { max-width: 100%; overflow-x: auto; border-radius: 8px; box-shadow: 0 0 8px rgba(0,0,0,0.1); }
+    table { width: 100%; border-collapse: collapse; font-size: 16px; background-color: #fff; }
+    thead { background-color: #004080; color: white; }
+    th, td { padding: 8px 10px; text-align: left; border-bottom: 1px solid #ddd; white-space: nowrap; }
+    caption { caption-side: top; font-size: 1.2em; font-weight: bold; margin: 10px 0; text-align: left; }
+    .demo-notice { background: #fff3cd; border: 1px solid #ffc107; border-radius: 6px; padding: 8px 12px; margin-bottom: 16px; font-size: 0.85rem; color: #856404; }
+    @media screen and (max-width: 600px) { th, td { font-size: 13px; padding: 6px 8px; } }
+  </style>
+</head>
+<body>
+
+<div class="demo-notice">⚠️ Demo version — all division names, institution names, and statistics are sample data only.</div>
+
+<div class="table-container">
+  <table>
+    <caption>Healthcare Institutions by DS Division — Demo Region</caption>
+    <thead>
+      <tr>
+        <th>DS Division</th>
+        <th>Type of Institution</th>
+        <th>Wards</th>
+        <th>Beds</th>
+        <th>Indoor Patients</th>
+        <th>Outdoor Patients</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>Division A</td><td>District General Hospital A</td><td>30</td><td>500</td><td>55,000</td><td>125,000</td></tr>
+      <tr><td>Division A</td><td>DH-01</td><td>2</td><td>60</td><td></td><td>35,000</td></tr>
+      <tr><td>Division A</td><td>PMCU-03</td><td></td><td></td><td></td><td>18,000</td></tr>
+      <tr><td>Division A</td><td>PMCU-12</td><td></td><td></td><td></td><td>10,500</td></tr>
+      <tr><td>Division A</td><td>PMCU-05</td><td></td><td></td><td></td><td>13,000</td></tr>
+      <tr><td>Division B</td><td>Base Hospital A — Type A</td><td>10</td><td>210</td><td>22,000</td><td>100,000</td></tr>
+      <tr><td>Division B</td><td>DH-14</td><td>4</td><td>1,250</td><td></td><td>38,000</td></tr>
+      <tr><td>Division B</td><td>PMCU-04</td><td></td><td></td><td></td><td>5,200</td></tr>
+      <tr><td>Division B</td><td>PMCU-02</td><td></td><td></td><td></td><td>15,500</td></tr>
+      <tr><td>Division C</td><td>Base Hospital B — Type B</td><td>7</td><td>160</td><td>18,500</td><td>74,000</td></tr>
+      <tr><td>Division C</td><td>DH-04 — Type C</td><td>4</td><td>27</td><td>1,000</td><td>20,500</td></tr>
+      <tr><td>Division C</td><td>DH-09 — Type C</td><td>3</td><td>28</td><td>1,200</td><td>24,000</td></tr>
+      <tr><td>Division C</td><td>PMCU-14</td><td></td><td></td><td></td><td>16,000</td></tr>
+      <tr><td>Division C</td><td>PMCU-10</td><td></td><td></td><td></td><td>8,500</td></tr>
+      <tr><td>Division D</td><td>Base Hospital C — Type B</td><td>3</td><td>40</td><td>3,800</td><td>39,000</td></tr>
+      <tr><td>Division D</td><td>DH-06 — Type C</td><td>3</td><td>30</td><td>1,500</td><td>29,000</td></tr>
+      <tr><td>Division D</td><td>DH-05 — Type C</td><td>3</td><td>20</td><td>1,650</td><td>27,500</td></tr>
+      <tr><td>Division D</td><td>PMCU-15</td><td></td><td></td><td></td><td>2,600</td></tr>
+      <tr><td>Division D</td><td>PMCU-08</td><td></td><td></td><td></td><td>8,500</td></tr>
+      <tr><td>Division E</td><td>Base Hospital A — Type B</td><td>8</td><td>145</td><td>21,500</td><td>98,000</td></tr>
+      <tr><td>Division E</td><td>PMCU-07</td><td></td><td></td><td></td><td>25,000</td></tr>
+      <tr><td>Division E</td><td>PMCU-06</td><td></td><td></td><td></td><td>13,800</td></tr>
+      <tr><td>Division E</td><td>PMCU-01</td><td></td><td></td><td></td><td>16,700</td></tr>
+      <tr><td>Division E</td><td>PMCU-13</td><td></td><td></td><td></td><td>13,200</td></tr>
+      <tr><td>Division F</td><td>DH-01 — Type C</td><td>4</td><td>48</td><td>2,050</td><td>46,000</td></tr>
+      <tr><td>Division G</td><td>DH-02 — Type C</td><td>4</td><td>28</td><td>2,260</td><td>41,000</td></tr>
+      <tr><td>Division G</td><td>PMCU-11</td><td></td><td></td><td></td><td>17,800</td></tr>
+      <tr><td>Division H</td><td>DH-07 — Type C</td><td>3</td><td>33</td><td>1,700</td><td>33,000</td></tr>
+      <tr><td>Division H</td><td>DH-10 — Type C</td><td>3</td><td>22</td><td>640</td><td>24,500</td></tr>
+      <tr><td>Division I</td><td>DH-03 — Type C</td><td>4</td><td>30</td><td>6,200</td><td>28,000</td></tr>
+      <tr><td>Division J</td><td>DH-11 — Type C</td><td>4</td><td>22</td><td>2,100</td><td>24,600</td></tr>
+      <tr><td>Division J</td><td>PMCU-09</td><td></td><td></td><td></td><td>16,800</td></tr>
+      <tr><td>Division K</td><td>DH-08 — Type C</td><td>5</td><td>28</td><td>1,280</td><td>29,500</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<a href="index.html" style="position:fixed;bottom:20px;right:20px;background:linear-gradient(to right,#004ba0,#1976d2);color:#fff;padding:14px 24px;border-radius:50px;text-decoration:none;font-size:16px;font-weight:600;font-family:'Segoe UI',sans-serif;box-shadow:0 6px 16px rgba(0,0,0,0.2);z-index:1000;">
+  🔙 Back to Health Statistics Dashboard
+</a>
+</body>
+</html>

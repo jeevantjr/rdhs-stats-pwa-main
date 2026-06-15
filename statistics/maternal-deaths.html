@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Maternal Deaths by Health Area (Sample 2020–2024)</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; background-color: #f2f4f8; color: #333; }
+    h2 { text-align: center; margin-top: 0; font-size: 1.8em; color: #004ba0; }
+    .table-container { overflow-x: auto; margin-bottom: 30px; }
+    table { width: 100%; border-collapse: collapse; margin: 0 auto; background-color: #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
+    th, td { border: 1px solid #ddd; padding: 10px; text-align: center; }
+    th { background-color: #4CAF50; color: white; }
+    tr:nth-child(even) { background-color: #f9f9f9; }
+    tr:hover { background-color: #e3f2fd; }
+    .chart-container { max-width: 800px; margin: 0 auto 50px; }
+    .back-button { position: fixed; bottom: 20px; right: 20px; background: linear-gradient(to right,#004ba0,#1976d2); color: #fff; padding: 14px 24px; border-radius: 50px; text-decoration: none; font-size: 16px; font-weight: 600; font-family: 'Segoe UI', sans-serif; box-shadow: 0 6px 16px rgba(0,0,0,0.2); z-index: 1000; }
+    .demo-notice { background:#fff3cd; border:1px solid #ffc107; border-radius:6px; padding:8px 12px; margin-bottom:16px; font-size:0.85rem; color:#856404; }
+  </style>
+</head>
+<body>
+
+<div class="demo-notice">⚠️ Demo version — all area names and statistics are sample data only.</div>
+
+<h2>Maternal Deaths by Health Area (Sample 2020–2024)</h2>
+
+<div class="chart-container">
+  <canvas id="birthsChart"></canvas>
+</div>
+
+<div class="table-container">
+  <table>
+    <caption><strong>Health Area Data (Sample 2020–2024)</strong></caption>
+    <thead>
+      <tr><th>S.No</th><th>Health Area</th><th>2020</th><th>2021</th><th>2022</th><th>2023</th><th>2024</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>01</td><td>Area-11</td><td></td><td></td><td></td><td></td><td>1</td></tr>
+      <tr><td>02</td><td>Area-08</td><td></td><td></td><td>1</td><td></td><td>1</td></tr>
+      <tr><td>03</td><td>Area-04</td><td>1</td><td>1</td><td></td><td></td><td></td></tr>
+      <tr><td>04</td><td>Area-05</td><td>1</td><td></td><td>2</td><td></td><td></td></tr>
+      <tr><td>05</td><td>Area-06</td><td>1</td><td></td><td></td><td></td><td></td></tr>
+      <tr><td>06</td><td>Area-01</td><td>2</td><td>3</td><td>1</td><td>3</td><td>1</td></tr>
+      <tr><td>07</td><td>Area-12</td><td></td><td></td><td></td><td></td><td>1</td></tr>
+      <tr><td>08</td><td>Area-10</td><td></td><td></td><td></td><td>1</td><td></td></tr>
+      <tr><td>09</td><td>Area-09</td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td>10</td><td>Area-02</td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td>11</td><td>Area-07</td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td>12</td><td>Area-03</td><td>1</td><td></td><td></td><td></td><td></td></tr>
+      <tr><th colspan="2">Total</th><td>6</td><td>4</td><td>4</td><td>4</td><td>4</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<a href="index.html" class="back-button">🔙 Back to Health Statistics Dashboard</a>
+
+<script>
+  const ctx = document.getElementById('birthsChart').getContext('2d');
+  new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: ['2020','2021','2022','2023','2024'],
+      datasets: [{
+        label: 'Total Maternal Deaths (Sample)',
+        data: [6, 4, 4, 4, 4],
+        backgroundColor: '#1976d2', borderRadius: 6,
+      }]
+    },
+    options: {
+      responsive: true,
+      plugins: { legend: { display: false }, title: { display: true, text: 'Total Maternal Deaths by Year (Sample)', font: { size: 16 } } },
+      scales: { y: { beginAtZero: true, ticks: { stepSize: 1 } } }
+    }
+  });
+</script>
+
+</body>
+</html>
